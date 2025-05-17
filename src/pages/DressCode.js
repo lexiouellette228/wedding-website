@@ -1,4 +1,5 @@
 // File: src/pages/DressCode.js
+// This file has been edited for security precautions
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import './DressCode.css';
@@ -62,7 +63,7 @@ const DressCode = () => {
         <div className="mb-5">
           <h4 className="mb-3">Welcome Party</h4>
           <p className="lead">
-            Join us for a <strong>White Party</strong> on Friday, 02/20/20256! Please wear all-white or ivory outfits — breezy white linens, white dresses, or classic ivory separates are all welcome.
+            Join us for a <strong>White Party</strong> on ! Please wear all-white or ivory outfits — breezy white linens, white dresses, or classic ivory separates are all welcome.
           </p>
        
           <div className="row mt-4 justify-content-center ">
