@@ -17,7 +17,7 @@ const Login = () => {
         try {
             const isProd = process.env.NODE_ENV === 'production';
             const apiURL = isProd 
-              ? 'https://wedding-web-final-nf7q.vercel.app/api/login' 
+              //hidden for security
               : '/api/login'; // local fallback
             
             const res = await fetch(apiURL, {
@@ -38,7 +38,7 @@ const Login = () => {
       
           localStorage.setItem('wedding-auth', 'true');
           localStorage.setItem('wedding-auth-expiry', expiry.toISOString());
-          localStorage.setItem('wedding-token', data.token); // 🔐 Save the JWT token
+          localStorage.setItem('wedding-token', data.token);
       
           navigate('/home');
         } catch (err) {
@@ -50,7 +50,7 @@ const Login = () => {
     <div className="login-wrapper d-flex align-items-center justify-content-center">
       <div className="card login-card text-center p-4">
         <img src="/shelllogo.png" alt="Wedding Logo" className="login-logo mx-auto mb-3" />
-        <h2 className="mb-3">Welcome to Lexi & Mason's Wedding Website</h2>
+        <h2 className="mb-3">Welcome to the Wedding Website</h2>
         <p className="mb-4 px-2">
           We're so excited to celebrate with you! Please enter the password given on the invitation below to view all of the event details, RSVP, and more.
         </p>
