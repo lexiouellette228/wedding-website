@@ -1,5 +1,5 @@
 // File: src/pages/RSVP.js
-//This file has been modified for privacy 
+// This file has been edited for security precautions
 
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
