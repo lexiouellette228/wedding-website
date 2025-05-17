@@ -1,6 +1,6 @@
 # Lexi & Mason's Wedding Website
 
-Welcome to the official wedding website for the happy couple. This site allows invited guests to RSVP securely, view event details, browse travel and accommodation info, and more — all behind a password-protected login.
+Welcome to the official wedding website for the happy couple. This site allows invited guests to RSVP securely, view event details, browse travel and accommodation info, and more — all behind a password-protected login. The files have been modified for security precautions. 
 
 ## Tech Stack
 
