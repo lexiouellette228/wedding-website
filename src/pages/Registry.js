@@ -1,3 +1,4 @@
+//This file has been modified for privavcy
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import './Registry.css';
@@ -15,7 +16,7 @@ const Registry = () => {
 
         <div className="text-center">
         <div> 
-           <Button href="https://www.amazon.com/wedding/registry/ZLY0LKWZGXFF" 
+           <Button href="" 
                    target="_blank" 
                    variant="outline-dark" 
                    size="lg">
@@ -24,7 +25,7 @@ const Registry = () => {
         </div>
         <div> 
           <br/>
-           <Button href="https://www.crateandbarrel.com/gift-registry/lexi-ouellette/r7312843" 
+           <Button href="" 
                    target="_blank" 
                    variant="outline-dark"
                    size="lg">
@@ -33,7 +34,7 @@ const Registry = () => {
         </div>
         <div> 
           <br/>
-           <Button href="https://venmo.com/code?user_id=2206102653501440642" 
+           <Button href="" 
                    target="_blank" 
                    variant="outline-dark"
                    size="lg">
