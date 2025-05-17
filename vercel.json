@@ -1,8 +1,9 @@
+// This file has been modified for security precautions
 {
     "build": {
       "env": {
-        "JWT_SECRET": "rockyarchie",
-        "ADMIN_PASSWORD_HASH": "$2b$10$Alc9BeGkG6SOYXvo35lfP.V/tAYGO71T0Lap0rAzsCV.AnuxmtJn."
+        "JWT_SECRET": "",
+        "ADMIN_PASSWORD_HASH": ""
       }
     }
   }
