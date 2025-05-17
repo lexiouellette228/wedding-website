@@ -1,4 +1,5 @@
 // File: src/pages/Home.js
+// This file has been edited for security precautions
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Countdown from '../components/Countdown';
@@ -8,8 +9,8 @@ const Home = () => (
   <div className="background-wrapper">
     <header className="header-with-icon">
     <img src="/shelllogo.png" alt="Wedding Icon" className="wedding-icon" />
-      <h1 className="bride-groom-name">Lexi & Mason </h1>
-      <p className="location-date">Februray 21, 2026 — Pensacola, FL</p>
+      <h1 className="bride-groom-name"> </h1>
+      <p className="location-date"></p>
     </header>
 
     <nav className="main-nav text-center py-2">
@@ -34,8 +35,8 @@ const Home = () => (
                 <h2>Wedding Details</h2>
             </div>
             <div className='wedding-font'>
-                <p><strong>Ceremony:</strong> 4 PM at Bella Villa Estate</p>
-                <p><strong>Reception:</strong> 6 PM at Bella Villa Estate</p>
+                <p><strong>Ceremony:</strong></p>
+                <p><strong>Reception:</strong> </p>
                 <Button variant="secondary" size="md" href="/dresscode">Dress Code</Button>
             </div>
         </div>
@@ -46,7 +47,7 @@ const Home = () => (
     <div className="container wedding-details-container">
         <div className="wedding-list p-4">
             <div className='wedding-font-title'>
-                <h4><strong>Let Lexi & Mason know if you can make it!</strong></h4>
+                <h4><strong>Let know if you can make it!</strong></h4>
                 <br/>
                 <div className="wedding-font">  
                 <Button variant="secondary" size="lg" href="/rsvp">RSVP</Button>
