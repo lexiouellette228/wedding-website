@@ -1,3 +1,4 @@
+// This file has been edited for security precautions
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
