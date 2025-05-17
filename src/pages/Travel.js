@@ -1,4 +1,5 @@
 // File: src/pages/Travel.js
+// This file has been modified for privacy
 import React from 'react';
 import './Travel.css';
 
@@ -34,17 +35,17 @@ const Travel = () => {
 
         <div className="section-block mb-5">
           <h4> Transportation</h4>
-          <p>The nearest airport is Pensacola International Airport (PNS), about 25 minutes away from the venue. Rental cars, Uber, and Lyft are available.</p>
+
         </div>
 
         <div className="section-block mb-5">
           <h4> Hotel Options</h4>
           <ul>
-            <li><strong>Hilton Garden Inn Pensacola Beach</strong> – Beachfront with pool</li>
-            <li><strong>Holiday Inn Express & Suites</strong> – Budget friendly, 15 minutes away</li>
-            <li><strong>Margaritaville Beach Hotel</strong> – Great for relaxing by the ocean</li>
+            <li><strong></strong> – Beachfront with pool</li>
+            <li><strong></strong> – Budget friendly, 15 minutes away</li>
+            <li><strong>/strong> – Great for relaxing by the ocean</li>
             <br/>
-            <li><strong>We are currently working on a room block with Hitlon </strong> – Will update as soon as it complete</li>
+            <li><strong> </strong> – Will update as soon as it complete</li>
           </ul>
         </div>
 
@@ -56,11 +57,11 @@ const Travel = () => {
         <div className="section-block">
           <h4>Things To Do</h4>
           <ul>
-            <li>Explore historic downtown Pensacola</li>
-            <li>Visit the National Naval Aviation Museum</li>
-            <li>Relax on Pensacola Beach</li>
-            <li>Enjoy fresh seafood at Peg Leg Pete's</li>
-            <li>Go dolphin watching or take a sunset cruise</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
         </div>
 
@@ -68,7 +69,7 @@ const Travel = () => {
         <div className="section-block">
           <ul>
             <br/>
-            <li>Text Mason or Lexi for more details or if you have any questions!</li>
+            <li></li>
           </ul>
         </div>
       </div>
