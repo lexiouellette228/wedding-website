@@ -1,73 +1,12 @@
 // File: src/pages/RSVP.js
+//This file has been modified for privacy 
+
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import './RSVP.css';
 
 const guestMap = {
-  'Penny Ouellette': ['Greg Ouellette', 'Aayden Ouellette'],
-  'Greg Ouellette': ['Penny Ouellette', 'Aayden Ouellette'],
-  'Aayden Ouellette': [],
-  'Makayla Odell': ['Guest'],
-  'Brandy Hewitt': ['Danny Hewiit','Logan Hewitt', 'Ethan Hewitt'],
-  'Danny Hewitt': ['Brandy Hewitt','Logan Hewitt', 'Ethan Hewitt'],
-  'Carolyn Johnson': [],
-  'Terry Hardin': [],
-  'Cliff Jones': [],
-  'Carlene Ouellette': [],
-  'Nick Jones': ['Heidi', 'Ramsey', 'Simmons'],
-  'Alicia Romano': ['Sal Ramono', 'Jake Ramono'],
-  'Sal Romano': ['Alicia Romano', 'Jake Ramono'],
-  'Luke Ramono': ['Guest'],
-  'Jessica Ouellette': ['Blake Resnick'],
-  'Geoff Ouellette': ['Fawn Ouellette'],
-  'Fawn Ouellette': ['Geoff Ouellette'],
-  'Mikey Ouellette': ['Guest'],
-  'Ike Roloue': [],
-  'Ella Hendrix': ['Matt Hendrix', 'Sutton Hendrix'],
-  'Matt Hendrix': ['Ella Hendrix', 'Sutton Hendrix'],
-  'Marissa Turner': [],
-  'Marty Turner': ['Melody Turner'],
-  'Melody Turner': ['Marty Turner'],
-  'Maddie Rainwater': ['Jacob Depolo'],
-  'Emily Mejia': ['Joaquin Mejia'],
-  'Joaquin Mejia': ['Emily Mejia'],
-  'Emily Bennet': ['Andrew Bennet', 'Knox Bennet'],
-  'Andrew Bennet': ['Emily Bennet', 'Knox Bennet'],
-  'Ricki Caroline Collins': [],
-  'Savana Milton': [],
-  'Isaiah Galvan ': [],
-  'Steve Strickland': ['Steves guest'],
-  'Brynn Chavira': ['Spencer Hurst'],
-  'Spencer Hurst': ['Brynn Chavira'],
-  'Kyle Briggs': ['Carly Rushing'],
-  'Carly Rushing': ['Kyle Briggs'],
-  'Danita Morgan': ['Mike Morgan', 'Malia Morgan'],
-  'Malia Morgan': [],
-  'Mike Morgan': ['Danita Morgan, Malia Morgan'],
-  'Will Maness': ['JoAnna Smith', 'Lucy'],
-  'JoAnna Smith': ['Will Maness', 'Lucy'],
-  'Adam Kramer': ['Skylar Kramer'],
-  'Skylar Kramer': ['Adam Kramer'],
-  'Patrick Raby': ['Guest'],
-  'Eveon Duncan': ['Marty'],
-  'Gibson Miller': ['Guest'],
-  'Tami Kraus': ['Rick Kraus'],
-  'Rick Kraus': ['Tami Kraus'],
-  'Jan West': ['Guest'],
-  'Joesph Ouellette': [],
-  'Ethan Miller': ['Kenzie Walters'],
-  'Kenzie Walters': ['Ethan Miller'],
-  'Jessica Jagger': ['RJ Myers'],
-  'Jacklyn Young': [],
-  'Brenda Duke': [],
-  'Sherri Gross': ['John Gross'],
-  'Daniel Gross': [],
-  'Ashely Gross': ['Fammily'],
-  'Jill Birdwell': ['Don Birdwell'],
-  'Don Birdwell': ['Jill Birdwell'],
-  'Leveda Birdwell': [],
-  'Tyler Birdwell': ['Terann Birdwell', 'Clark Birdwell', 'Barnes Birdwell', 'Woods Birdwell'],
-  'Terann Birdwell': ['Tyler Birdwell', 'Clark Birdwell', 'Barnes Birdwell', 'Woods Birdwell']
+//hidden for privacy
 };
 
 const guestList = Object.keys(guestMap);
@@ -107,16 +46,16 @@ const RSVP = () => {
     e.preventDefault();
 
     const formData = new FormData();
-    formData.append('entry.1955179773', sanitizeInput(selectedGuest));
-    formData.append('entry.877086558', sanitizeInput(isAttending));
+    formData.append('entry', sanitizeInput(selectedGuest));
+    formData.append('entry', sanitizeInput(isAttending));
     formData.append(
       'entry.1498135098',
       partyNames.map(p => `${sanitizeInput(p.name)}: ${sanitizeInput(p.response || 'No response')}`).join(', ')
     );
-    formData.append('entry.2606285', sanitizeInput(dietary));
-    formData.append('entry.1561768029', sanitizeInput(song));
+    formData.append('entry', sanitizeInput(dietary));
+    formData.append('entry', sanitizeInput(song));
 
-    fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLScXyMSAlSWMrF2YpnEIgbHjG9kPSSish3pb1s_gdmUFF_r-cg/formResponse', {
+    fetch('hidden for privacy', {
       method: 'POST',
       mode: 'no-cors',
       body: formData
@@ -131,7 +70,7 @@ const RSVP = () => {
         <div className="container events-container">
           <div className="container rsvp-container">
             <h2 className='rsvp-font'>RSVP</h2>
-            <p className="location-date">Lexi & Mason's Wedding</p>
+            <p className="location-date">Wedding</p>
             <p className="location-date">If you're responding for you and a guest (or your family), you'll be able to RSVP for your entire group.</p>
 
             {!submitted ? (
