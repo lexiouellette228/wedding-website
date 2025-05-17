@@ -1,9 +1,10 @@
+// This file has been edited for security precautions
 import React, { useEffect, useState } from 'react';
 import './Countdown.css';
 
 const Countdown = () => {
     const calculateTimeLeft = () => {
-      const targetDate = new Date('2026-02-21T16:00:00-06:00');
+      const targetDate = new Date('');
       const now = new Date();
       const difference = targetDate - now;
   
